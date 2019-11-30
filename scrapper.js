@@ -13,9 +13,6 @@ async function loadURL(url) {
 	}
 	try {
 		let html = await request(options)
-
-		console.log(html)
-
 		return html
 	} catch {
 		console.error('Error!!!')
@@ -48,7 +45,6 @@ async function productScraper(url) {
 			price: price
 		})
 	})
-	console.log(results)
 	return results
 }
 
