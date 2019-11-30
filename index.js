@@ -1,6 +1,6 @@
 const express = require('express')
 const server = express()
-const port = 8080
+const port = process.env.PORT || 8080
 
 const productScrapper = require('./scrapper.js')
 
