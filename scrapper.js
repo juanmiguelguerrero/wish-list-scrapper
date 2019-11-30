@@ -12,8 +12,10 @@ async function loadURL(url) {
 		}
 	}
 	try {
-		let html = await request(url)
+		let html = await request(options)
+
 		console.log(html)
+
 		return html
 	} catch {
 		console.error('Error!!!')
