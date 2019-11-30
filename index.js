@@ -16,6 +16,7 @@ server.get("/", (req, res) => {
 server.post("/", async (req, res) => {
 	
 	let url = req.body.url
+	console.log(url)
 
 	if (!url) {
 		res.json({ message: "URL parameter not received"})
