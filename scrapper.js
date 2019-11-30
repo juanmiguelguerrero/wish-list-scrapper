@@ -13,6 +13,7 @@ async function loadURL(url) {
 	}
 	try {
 		let html = await request(url)
+		console.log(html)
 		return html
 	} catch {
 		console.error('Error!!!')
